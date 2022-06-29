@@ -1,0 +1,15 @@
+.products-title {
+  font-family: pacifico, sans-serif;
+  font-size: 50px;
+  margin: 180px auto auto 650px;
+}
+
+.box-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .products-box {
+    flex: 1 1 30px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+  }
+}

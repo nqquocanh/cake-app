@@ -1,0 +1,56 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.body {
+  .do-you-know {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 220px;
+    .see-more-btn {
+      button {
+        margin-top: -400px;
+        margin-left: 200px;
+        padding: 20px;
+        width: 200px;
+        border: none;
+        border-radius: 30px;
+        border: 1px solid white;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.2);
+        font-size: 15px;
+        position: absolute;
+      }
+      :hover {
+        cursor: pointer;
+        background-color: rgba(182, 186, 143, 0.864);
+        color: white;
+      }
+    }
+    .do-you-know-image {
+      margin: 120px auto auto 120px;
+      img {
+        width: 500px;
+      }
+    }
+    .do-you-know-content {
+      width: 700px;
+      margin-right: 100px;
+      .do-you-know-title {
+        font-family: pacifico, sans-serif;
+        font-size: 50px;
+        margin-top: 30px;
+        color: rgb(132, 73, 73);
+      }
+      .do-you-know-description {
+        p {
+          font-size: 30px;
+          margin-top: 50px;
+        }
+      }
+    }
+  }
+}
