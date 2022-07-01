@@ -6,6 +6,8 @@ import Products from "./pages/Products/Products";
 import NavBar from "./components/NavBar/NavBar";
 import Footer from "./components/Footer/Footer";
 import ProductDetail from "./components/ProductDetail/ProductDetail";
+import Payment from "./components/Payment/Payment";
+import NotFound from "./pages/NotFound/NotFound";
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/products" element={<Products />} />
           <Route path="/products/:id" element={<ProductDetail />} />
+          <Route path="/payment" element={<Payment />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />
       </BrowserRouter>

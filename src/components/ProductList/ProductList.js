@@ -6,6 +6,7 @@ import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 
 const ProductList = () => {
+  const navigate = useNavigate();
   const dispatch = useDispatch();
   const addToCartHandler = (item) => {
     dispatch(
@@ -16,8 +17,6 @@ const ProductList = () => {
       })
     );
   };
-
-  const navigate = useNavigate();
   const listItems = product_card.map((item) => (
     <>
       <div className="card" key={item.id}>
