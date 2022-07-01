@@ -5,7 +5,7 @@ import AboutUs from "./pages/AboutUs/AboutUs";
 import Products from "./pages/Products/Products";
 import NavBar from "./components/NavBar/NavBar";
 import Footer from "./components/Footer/Footer";
-import ProductDetail from "./components/ProductDetail/ProductDetail";
+import ProductDetail from "../src/components/ProductList/ProductDetail/ProductDetail";
 import Payment from "./components/Payment/Payment";
 import NotFound from "./pages/NotFound/NotFound";
 

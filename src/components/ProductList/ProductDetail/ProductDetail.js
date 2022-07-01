@@ -1,8 +1,8 @@
 import React from "react";
-import product_card from "../../assets/product-data/product-data";
+import product_card from "../../../assets/product-data/product-data";
 import { useParams } from "react-router-dom";
 import { useDispatch } from "react-redux";
-import { cartActions } from "../../store/cart-slice";
+import { cartActions } from "../../../store/cart-slice";
 import "./ProductDetail.scss";
 
 const ProductDetail = () => {
@@ -24,7 +24,7 @@ const ProductDetail = () => {
       <div className="product-details-img">
         <img
           alt=""
-          src={require(`../../assets/product-img/${detailItem.img}`)}
+          src={require(`../../../assets/product-img/${detailItem.img}`)}
         />
       </div>
       <div className="product-details-box">

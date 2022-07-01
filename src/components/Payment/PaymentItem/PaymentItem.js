@@ -1,26 +1,17 @@
 import "./PaymentItem.scss";
 
-const CartItem = () => {
+const PaymentItem = (props) => {
+  const { name, quantity, total, price } = props.item;
+  console.log(name, quantity, total, price);
   return (
-    <>
-      <div className="payment-items">
-        <div>
-          <h1>Product Name</h1>
-        </div>
-        <div>
-          <h2>Quantity</h2>
-          <h2>Amount</h2>
-        </div>
-        <div>
-          <button>+</button>
-          <button>-</button>
-        </div>
-      </div>
+    <div className="payment-items">
+      <h3>{name}</h3>
+      <span>{quantity}</span>
       <div>
-        <button>PAYMENT</button>
+        <button className="payment-btn">PAYMENT</button>
       </div>
-    </>
+    </div>
   );
 };
 
-export default CartItem;
+export default PaymentItem;
