@@ -18,7 +18,7 @@ const ProductDetail = () => {
     );
   };
 
-  const detailItem = product_card.find((item) => item.id == params.id);
+  const detailItem = product_card.find((item) => item.id === params.id);
   const data = (
     <div className="product-details-info">
       <div className="product-details-img">
