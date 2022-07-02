@@ -4,6 +4,7 @@ import { useSelector } from "react-redux";
 
 const Payment = () => {
   const cartItems = useSelector((state) => state.cart.items);
+  console.log(cartItems);
   return (
     <>
       <div className="payment">

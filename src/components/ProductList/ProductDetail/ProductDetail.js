@@ -1,5 +1,5 @@
 import React from "react";
-import product_card from "../../../assets/product-data/product-data";
+import PRODUCT_DATA from "../../../assets/product-data/product-data";
 import { useParams } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { cartActions } from "../../../store/cart-slice";
@@ -7,7 +7,9 @@ import "./ProductDetail.scss";
 
 const ProductDetail = () => {
   const params = useParams();
+  const detailItem = PRODUCT_DATA.find((item) => item.id === params.id);
   const dispatch = useDispatch();
+  
   const addToCartHandler = (item) => {
     dispatch(
       cartActions.addItemToCart({
@@ -18,7 +20,6 @@ const ProductDetail = () => {
     );
   };
 
-  const detailItem = product_card.find((item) => item.id === params.id);
   const data = (
     <div className="product-details-info">
       <div className="product-details-img">
@@ -41,7 +42,7 @@ const ProductDetail = () => {
           {detailItem.price} {detailItem.currency}
         </div>
         <div className="product-detail-btn">
-          <button onClick={addToCartHandler}>Add to cart</button>
+          <button onClick={addToCartHandler({detailItem})}>Add to cart</button>
         </div>
       </div>
     </div>
