@@ -26,13 +26,6 @@ const ProductList = () => {
     fetchProducts();
   }, []);
 
-  const [data, setData] = useState(products);
-  const filterResult = (item) => {
-    const result = products.filter((curDate) => {
-      return curDate.category === item;
-    });
-    setData(result);
-  };
   const listItems = products.map((item) => (
     <ProductCard
       key={item.id}
@@ -47,13 +40,6 @@ const ProductList = () => {
     <>
       <div className="products">
         <h1 className="products-title">Products</h1>
-        <div>
-          <input placeholder=" From..."></input>
-          <input placeholder=" To..."></input>
-          <button onClick={() => filterResult("Cake")}>Cake</button>
-          <button>Bread</button>
-          <button>Gato</button>
-        </div>
         <div className="box-container">{listItems}</div>
       </div>
     </>
