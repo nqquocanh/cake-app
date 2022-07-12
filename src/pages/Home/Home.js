@@ -1,4 +1,3 @@
-import "./Home.scss";
 import Body from "./Body/Body";
 
 const Home = () => {

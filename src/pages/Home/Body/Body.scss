@@ -20,7 +20,7 @@
         border-radius: 30px;
         border: 1px solid white;
         color: white;
-        background-color: rgba(0, 0, 0, 0.2);
+        background-color: rgba(213, 44, 44, 0.442);
         font-size: 15px;
         position: absolute;
       }
@@ -47,8 +47,41 @@
       }
       .do-you-know-description {
         p {
-          font-size: 30px;
+          font-size: 25px;
           margin-top: 50px;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+      }
+    }
+  }
+  .our-products {
+    .our-products-title {
+      font-family: pacifico, sans-serif;
+      font-size: 50px;
+      margin-top: 80px;
+      color: rgb(132, 73, 73);
+      margin-left: 620px;
+    }
+    .our-products-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 80%;
+      margin: 0px 0px 70px 150px;
+      .our-products-item {
+        padding: 25px;
+        .our-products-img {
+          margin-top: 30px;
+          width: 200px;
+          height: 200px;
+        }
+        h1 {
+          margin-top: 30px;
+          font-family: pacifico, sans-serif;
+        }
+        p {
+          margin-top: 30px;
+          font-family: Arial, Helvetica, sans-serif;
         }
       }
     }

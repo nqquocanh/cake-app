@@ -6,7 +6,7 @@ const Footer = () => {
     <>
       <div className="footer">
         <div className="logo">
-          <img alt="" src={require("../../assets/logo-1.png")}></img>
+          <img alt="" src={require("../../assets/logo-1.png")} />
           <p>Copyrights © 2019 by Poeme Bakery.</p>
         </div>
       </div>

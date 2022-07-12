@@ -1,0 +1,24 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.nav-icons-cart {
+  color: white;
+  :visited {
+    text-decoration: none;
+    color: white;
+  }
+
+  cursor: pointer;
+  span:nth-child(2) {
+    padding: 0 3px;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    position: relative;
+    top: -15px;
+    font-size: 15px;
+  }
+}

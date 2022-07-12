@@ -1,0 +1,25 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.search-bar {
+  margin: 300px auto 100px 450px;
+  input {
+    height: 50px;
+    width: 600px;
+    font-size: 25px;
+    border-radius: 10px;
+    border-style: solid;
+  }
+}
+
+.search-item {
+  .search-list {
+    display: flex;
+    width: 60%;
+    flex-wrap: wrap;
+    margin-left: 330px;
+  }
+}

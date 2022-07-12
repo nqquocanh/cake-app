@@ -10,3 +10,61 @@
   font-size: 25px;
   color: rgb(132, 73, 73);
 }
+
+.total-amount {
+  margin: 50px auto 50px 930px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  color: rgb(132, 73, 73);
+}
+.payment-btn {
+  margin: 50px auto 50px 690px;
+  button {
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: rgb(226, 181, 181);
+    border: none;
+  }
+  :hover {
+    cursor: pointer;
+  }
+}
+
+.payment-success {
+  margin: 250px auto 50px 580px;
+  font-family: pacifico, sans-serif;
+  font-size: 25px;
+  color: rgb(132, 73, 73);
+  button {
+    margin: 50px auto auto 75px;
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: rgb(226, 181, 181);
+    border: none;
+  }
+  button:hover {
+    cursor: pointer;
+  }
+}
+
+.empty-cart-notification {
+  .empty-notification {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: rgb(132, 73, 73);
+    margin: 50px auto 100px 630px;
+  }
+  button {
+    margin: auto auto 50px 640px;
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: rgb(226, 181, 181);
+    border: none;
+  }
+  button:hover {
+    cursor: pointer;
+  }
+}

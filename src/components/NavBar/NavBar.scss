@@ -12,10 +12,15 @@ img {
   img {
     width: 100%;
     margin-top: -30px;
+    text-decoration: none;
   }
   .banner-1-title {
     margin: -450px auto auto 200px;
     color: white;
+    :visited {
+      text-decoration: none;
+      color: white;
+    }
     h1 {
       font-family: pacifico, sans-serif;
       font-size: 100px;
