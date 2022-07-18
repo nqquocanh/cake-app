@@ -24,7 +24,6 @@ const Payment = () => {
   );
 
   const submitOrderHandler = (userData) => {
-    console.log(userData, cartItems);
     const submitOrder = async () => {
       const response = await fetch(
         "https://cake-app-8ff1d-default-rtdb.asia-southeast1.firebasedatabase.app/Orders.json",
@@ -39,6 +38,7 @@ const Payment = () => {
       if (response.ok) {
         setIsCheckout(true);
         dispatch(cartActions.clearCart());
+        console.log(await response.json());
       }
     };
     submitOrder();

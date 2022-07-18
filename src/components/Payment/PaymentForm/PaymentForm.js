@@ -74,8 +74,6 @@ const PaymentForm = (props) => {
         </div>
         <div>
           <button>Confirm</button>
-          {/* <Link to="/payment-success">
-          </Link> */}
         </div>
       </div>
     </form>

@@ -7,11 +7,8 @@ import NavBar from "./components/NavBar/NavBar";
 import Footer from "./components/Footer/Footer";
 import ProductDetail from "../src/components/ProductList/ProductDetail/ProductDetail";
 import Payment from "./components/Payment/Payment";
-// import PaymentSuccess from "./components/Payment/PaymentSuccess/PaymentSuccess";
 import NotFound from "./pages/NotFound/NotFound";
 import Search from "./pages/Search/Search";
-
-//productList.filter( item => item.price <= maxInput && item.price >= minInput)
 
 function App() {
   return (
@@ -25,7 +22,6 @@ function App() {
           <Route path="/products/:id" element={<ProductDetail />} />
           <Route path="/payment" element={<Payment />} />
           <Route path="/search" element={<Search />} />
-          {/* <Route path="/payment-success" element={<PaymentSuccess />} /> */}
           <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />
