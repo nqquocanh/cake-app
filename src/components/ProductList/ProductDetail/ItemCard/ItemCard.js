@@ -29,14 +29,6 @@ const ItemDetail = (props) => {
         <div className="item-card-price">
           <p>{props.price} $</p>
         </div>
-        <div className="stars">
-          <i className="fas fa-star" />
-          <i className="fas fa-star" />
-          <i className="fas fa-star" />
-          <i className="fas fa-star" />
-          <i className="fas fa-star-half" />
-        </div>
-
         <div className="item-card-description">
           <p>{props.description}</p>
         </div>

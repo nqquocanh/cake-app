@@ -5,7 +5,6 @@ import { cartActions } from "../../../store/cart-slice";
 const PaymentItem = (props) => {
   const dispatch = useDispatch();
   const { title, quantity, total, price, id, img } = props.item;
-
   const removeItemHandler = () => {
     dispatch(cartActions.removeItemFromCart(id));
   };
@@ -37,7 +36,8 @@ const PaymentItem = (props) => {
         </div>
         <div></div>
         <div className="payment-total">
-          ${total.toFixed(2)} <span>(${price.toFixed(2)}/item)</span>
+          ${total ? (+total).toFixed(2) : 0}{" "}
+          <span>(${price ? (+price).toFixed(2) : 0}/item)</span>
         </div>
       </div>
       <div className="payment-actions">

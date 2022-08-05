@@ -30,7 +30,7 @@ const ProductDetail = () => {
   }, []);
   let listItems;
   if (products && products.length) {
-    const [itemInfo] = products.filter((item) => +item.id === +id);
+    const [itemInfo] = products.filter((item) => item.id === id);
     listItems = (
       <ItemCard
         key={itemInfo.id}

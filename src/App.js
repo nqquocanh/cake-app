@@ -9,12 +9,14 @@ import ProductDetail from "../src/components/ProductList/ProductDetail/ProductDe
 import Payment from "./components/Payment/Payment";
 import NotFound from "./pages/NotFound/NotFound";
 import Search from "./pages/Search/Search";
+import Slider from "./components/Slider/Slider";
 
 function App() {
   return (
     <>
       <BrowserRouter>
         <NavBar />
+
         <Routes>
           <Route path="/" element={<Home />} exact />
           <Route path="/about-us" element={<AboutUs />} />
@@ -25,6 +27,7 @@ function App() {
           <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />
+        <Slider />
       </BrowserRouter>
     </>
   );

@@ -1,6 +1,6 @@
 import PaymentItem from "./PaymentItem/PaymentItem";
 import "./Payment.scss";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useSelector } from "react-redux";
 import PaymentForm from "./PaymentForm/PaymentForm";
 import { Link } from "react-router-dom";
@@ -12,10 +12,20 @@ const Payment = () => {
   const [isCheckout, setIsCheckout] = useState(false);
   const cartItems = useSelector((state) => state.cart.items);
   const dispatch = useDispatch();
-
   const formHandler = () => {
     setIsForm(true);
   };
+
+  useEffect(() => {
+    const fetchCart = async () => {
+      const response = await fetch(
+        "https://cake-app-8ff1d-default-rtdb.asia-southeast1.firebasedatabase.app/cart.json"
+      );
+      const responseData = await response.json();
+      dispatch(cartActions.setCart(responseData));
+    };
+    fetchCart();
+  }, [dispatch]);
 
   const formActions = (
     <div className="payment-btn">

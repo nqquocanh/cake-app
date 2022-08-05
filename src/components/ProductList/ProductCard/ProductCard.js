@@ -33,15 +33,8 @@ const ProductCard = (props) => {
           {props.title}
         </h2>
         <p className="=price">{props.price} $</p>
-        <div className="stars">
-          <i className="fas fa-star" />
-          <i className="fas fa-star" />
-          <i className="fas fa-star" />
-          <i className="fas fa-star" />
-          <i className="fas fa-star-half" />
-        </div>
         <div className="btn">
-          <button onClick={addToCartHandler}> Add to cart </button>
+          <button onClick={addToCartHandler}> Add to cart</button>
         </div>
       </div>
     </div>

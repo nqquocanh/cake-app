@@ -5,7 +5,9 @@ const Products = () => {
   return (
     <>
       <div className="product-items">
-        <ProductList />
+        <div className="product-body">
+          <ProductList />
+        </div>
       </div>
     </>
   );

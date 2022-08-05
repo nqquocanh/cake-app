@@ -4,22 +4,27 @@
   box-sizing: border-box;
 }
 
-.search-bar {
-  margin: 300px auto 100px 450px;
-  input {
-    height: 50px;
-    width: 600px;
-    font-size: 25px;
-    border-radius: 10px;
-    border-style: solid;
+.search-page {
+  margin: 300px auto auto auto;
+  text-align: center;
+  .search-bar {
+    input {
+      height: 50px;
+      width: 600px;
+      font-size: 25px;
+      border-radius: 10px;
+      border-style: solid;
+    }
   }
-}
 
-.search-item {
-  .search-list {
-    display: flex;
-    width: 60%;
-    flex-wrap: wrap;
-    margin-left: 330px;
+  .search-item {
+    .search-list {
+      width: 70%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      text-align: center;
+      margin: 50px auto 50px 220px;
+    }
   }
 }

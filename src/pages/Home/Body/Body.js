@@ -1,8 +1,47 @@
 import React from "react";
 import "./Body.scss";
 import { Link } from "react-router-dom";
+import { useState, useEffect } from "react";
+import ProductCard from "../../../components/ProductList/ProductCard/ProductCard";
 
 const Body = () => {
+  const [products, setProducts] = useState([]);
+  useEffect(() => {
+    const fetchProducts = async () => {
+      const response = await fetch(
+        "https://cake-app-8ff1d-default-rtdb.asia-southeast1.firebasedatabase.app/Products.json"
+      );
+      const responseData = await response.json();
+      const loadedProducts = [];
+      for (const key in responseData) {
+        if (responseData[key]) {
+          loadedProducts.push({
+            id: key,
+            title: responseData[key]?.title,
+            description: responseData[key]?.description,
+            price: responseData[key]?.price,
+            img: responseData[key]?.img,
+          });
+        }
+      }
+      setProducts(loadedProducts);
+    };
+    fetchProducts();
+  }, []);
+
+  const listItems = products
+    .slice(0, 4)
+    .map((item) => (
+      <ProductCard
+        key={item.id}
+        id={item.id}
+        title={item.title}
+        price={item.price}
+        description={item.description}
+        img={item.img}
+      />
+    ));
+
   return (
     <div className="body">
       <div className="do-you-know">
@@ -99,6 +138,10 @@ const Body = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div className="main-product">
+        <div className="main-product-title">Main products</div>
+        <div className="d-flex">{listItems}</div>
       </div>
     </div>
   );
