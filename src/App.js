@@ -8,26 +8,23 @@ import Footer from "./components/Footer/Footer";
 import ProductDetail from "../src/components/ProductList/ProductDetail/ProductDetail";
 import Payment from "./components/Payment/Payment";
 import NotFound from "./pages/NotFound/NotFound";
-import Search from "./pages/Search/Search";
 import Slider from "./components/Slider/Slider";
 
 function App() {
   return (
     <>
       <BrowserRouter>
+        <Slider />
         <NavBar />
-
         <Routes>
           <Route path="/" element={<Home />} exact />
           <Route path="/about-us" element={<AboutUs />} />
           <Route path="/products" element={<Products />} />
           <Route path="/products/:id" element={<ProductDetail />} />
           <Route path="/payment" element={<Payment />} />
-          <Route path="/search" element={<Search />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />
-        <Slider />
       </BrowserRouter>
     </>
   );

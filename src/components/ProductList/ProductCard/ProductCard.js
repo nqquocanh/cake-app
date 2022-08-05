@@ -13,6 +13,7 @@ const ProductCard = (props) => {
         title: props.title,
         price: props.price,
         img: props?.img,
+        category: props?.category,
       })
     );
   };
@@ -33,7 +34,7 @@ const ProductCard = (props) => {
           {props.title}
         </h2>
         <p className="=price">{props.price} $</p>
-        <div className="btn">
+        <div className="add-to-cart-btn">
           <button onClick={addToCartHandler}> Add to cart</button>
         </div>
       </div>

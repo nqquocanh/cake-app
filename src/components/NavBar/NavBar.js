@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 import "./NavBar.scss";
 import CartButton from "../CartButton/CartButton";
-import SearchButton from "../SearchButton/SearchButton";
 
 const NavBar = () => {
   const cart = useSelector((state) => state.cart);
@@ -14,7 +13,6 @@ const NavBar = () => {
   return (
     <div className="nav">
       <div className="banner-1">
-        <img alt="" src={require("../../assets/banner-1.jpg")}></img>
         <div className="banner-1-title">
           <Link style={{ textDecoration: "none" }} to="/">
             <h1>Poeme Bakery</h1>
@@ -39,7 +37,6 @@ const NavBar = () => {
             </Link>
           </div>
           <div className="nav-icons">
-            <SearchButton />
             <CartButton />
           </div>
         </div>

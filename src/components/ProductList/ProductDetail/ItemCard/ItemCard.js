@@ -21,7 +21,6 @@ const ItemDetail = (props) => {
       <div className="item-card-img">
         <img alt="" src={`${props.img}`} />
       </div>
-
       <div className="item-card-info">
         <div className="item-card-title">
           <h2>{props.title}</h2>
