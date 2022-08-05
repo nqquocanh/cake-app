@@ -21,13 +21,12 @@ const ItemDetail = (props) => {
       <div className="item-card-img">
         <img alt="" src={`${props.img}`} />
       </div>
-
       <div className="item-card-info">
         <div className="item-card-title">
           <h2>{props.title}</h2>
         </div>
         <div className="item-card-price">
-          <p>{props.price} $</p>
+          <p>{props.price} ฿</p>
         </div>
         <div className="item-card-description">
           <p>{props.description}</p>

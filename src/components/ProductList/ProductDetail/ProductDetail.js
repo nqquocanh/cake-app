@@ -1,12 +1,12 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import ItemCard from "./ItemCard/ItemCard";
 import { useParams } from "react-router-dom";
 
 const ProductDetail = () => {
   let { id } = useParams();
 
-  const [products, setProducts] = React.useState([]);
-  React.useEffect(() => {
+  const [products, setProducts] = useState([]);
+  useEffect(() => {
     const fetchProducts = async () => {
       const response = await fetch(
         "https://cake-app-8ff1d-default-rtdb.asia-southeast1.firebasedatabase.app/Products.json"

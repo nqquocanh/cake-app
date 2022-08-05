@@ -6,13 +6,13 @@
 
 .body {
   .do-you-know {
+    background-image: url(../../../assets/background-4.png);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 220px;
     .see-more-btn {
       button {
-        margin-top: -400px;
+        margin-top: -500px;
         margin-left: 200px;
         padding: 20px;
         width: 200px;
@@ -31,9 +31,10 @@
       }
     }
     .do-you-know-image {
-      margin: 120px auto auto 120px;
+      margin: 80px auto auto 120px;
       img {
         width: 500px;
+        box-shadow: 0 0 20px #000000;
       }
     }
     .do-you-know-content {
@@ -42,7 +43,6 @@
       .do-you-know-title {
         font-family: pacifico, sans-serif;
         font-size: 50px;
-        margin-top: 30px;
         color: rgb(132, 73, 73);
       }
       .do-you-know-description {
@@ -55,10 +55,13 @@
     }
   }
   .our-products {
+    background-image: url(../../../assets/background-4.png);
+    padding-top: 40px;
+    padding-bottom: 1px;
     .our-products-title {
       font-family: pacifico, sans-serif;
       font-size: 50px;
-      margin-top: 80px;
+
       color: rgb(132, 73, 73);
       margin-left: 620px;
     }
@@ -67,10 +70,13 @@
       justify-content: space-between;
       align-items: center;
       width: 90%;
-      margin: 0px 0px 70px 100px;
+      margin: -20px 0px 70px 80px;
       .our-products-item {
         padding: 25px;
         .our-products-img {
+          img {
+            margin-left: 60px;
+          }
           margin-top: 30px;
           width: 200px;
           height: 200px;
@@ -78,28 +84,67 @@
         h1 {
           margin-top: 30px;
           font-family: pacifico, sans-serif;
+          text-align: center;
         }
         p {
           margin-top: 30px;
           font-family: sans-serif, Helvetica, Arial;
+          text-align: center;
         }
       }
     }
   }
   .main-product {
+    padding-top: 30px;
     .main-product-title {
       font-family: pacifico, sans-serif;
       font-size: 50px;
-      margin-top: 80px;
       color: rgb(132, 73, 73);
-      margin-left: 600px;
-      font-weight: 600;
+      margin-left: 615px;
+    }
+    .d-flex {
+      display: flex;
+      justify-content: space-between;
+      width: 80%;
+      margin-left: 160px;
     }
   }
-}
-.d-flex {
-  display: flex;
-  justify-content: space-between;
-  width: 80%;
-  margin: auto auto 80px 160px;
+  .our-store {
+    margin-top: 20px;
+    padding-bottom: 20px;
+    background-color: bisque;
+    .our-store-title {
+      font-family: pacifico, sans-serif;
+      font-size: 50px;
+      color: rgb(132, 73, 73);
+      text-align: center;
+      padding-top: 30px;
+    }
+    .our-store-content {
+      margin-top: 30px;
+      display: flex;
+      .our-store-address-system {
+        margin-top: 30px;
+        .our-store-address {
+          margin: 10px auto auto 200px;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 18px;
+        }
+        .our-store-social {
+          margin-top: 100px;
+          margin-left: 180px;
+          i {
+            padding: 20px;
+            font-size: 30px;
+          }
+        }
+      }
+
+      .our-store-img {
+        width: 450px;
+        margin: auto 180px 30px auto;
+        box-shadow: 0 0 10px #000000;
+      }
+    }
+  }
 }

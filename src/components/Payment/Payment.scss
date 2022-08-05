@@ -5,17 +5,19 @@
 }
 
 .payment {
-  margin: 250px auto 50px 530px;
+  margin: 70px auto 50px 580px;
   font-family: pacifico, sans-serif;
-  font-size: 25px;
+  font-size: 50px;
   color: rgb(132, 73, 73);
 }
 
 .total-amount {
   margin: 50px auto 50px 930px;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 12px;
   color: rgb(132, 73, 73);
+  h1 {
+    font-size: 28px;
+  }
 }
 .payment-btn {
   margin: 50px auto 50px 690px;
@@ -32,12 +34,17 @@
 }
 
 .payment-success {
-  margin: 250px auto 50px 580px;
+  text-align: center;
+  padding: 50px 0px;
   font-family: pacifico, sans-serif;
   font-size: 25px;
   color: rgb(132, 73, 73);
+  h1 {
+    padding: 30px 0px;
+  }
   button {
-    margin: 50px auto auto 75px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
     padding: 20px;
     font-size: 20px;
     border-radius: 10px;
@@ -54,10 +61,10 @@
     font-family: Arial, Helvetica, sans-serif;
     font-size: 25px;
     color: rgb(132, 73, 73);
-    margin: 50px auto 100px 630px;
+    margin: 50px auto 100px 650px;
   }
   button {
-    margin: auto auto 50px 640px;
+    margin: auto auto 50px 645px;
     padding: 20px;
     font-size: 20px;
     border-radius: 10px;

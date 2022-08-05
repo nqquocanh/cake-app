@@ -36,8 +36,8 @@ const PaymentItem = (props) => {
         </div>
         <div></div>
         <div className="payment-total">
-          ${total ? (+total).toFixed(2) : 0}{" "}
-          <span>(${price ? (+price).toFixed(2) : 0}/item)</span>
+          ฿{total ? (+total).toFixed(2) : 0}{" "}
+          <span>(฿{price ? (+price).toFixed(2) : 0}/item)</span>
         </div>
       </div>
       <div className="payment-actions">
