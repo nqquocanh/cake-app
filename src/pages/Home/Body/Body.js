@@ -85,7 +85,7 @@ const Body = () => {
                 src={require("../../../assets/our-products-img-01.png")}
               />
             </div>
-            <h1>Cake</h1>
+            <h1>Soymilk (นมถั่วเหลือง)</h1>
             <div className="our-products-description">
               <p>
                 If you are planning to enjoy a cake party filled with natural
@@ -117,7 +117,7 @@ const Body = () => {
                 src={require("../../../assets/our-products-img-03.png")}
               />
             </div>
-            <h1>Gato Cake</h1>
+            <h1>Salad Dressing (น้ำสลัด)</h1>
             <div className="our-products-description">
               <p>
                 Is a type of cake that carries many important meanings in the
@@ -134,7 +134,7 @@ const Body = () => {
                 src={require("../../../assets/our-products-img-02.png")}
               />
             </div>
-            <h1>Bread, cookies</h1>
+            <h1>Bread (ขนมปัง)</h1>
             <div className="our-products-description">
               <p>
                 Thanks to the fresh ingredients and skillful processing of the

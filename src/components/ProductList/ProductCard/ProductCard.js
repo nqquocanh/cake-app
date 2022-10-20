@@ -33,7 +33,7 @@ const ProductCard = (props) => {
         >
           {props.title}
         </h2>
-        <p className="=price">{props.price} $</p>
+        <p className="=price">{props.price} ฿</p>
         <div className="add-to-cart-btn">
           <button onClick={addToCartHandler}> Add to cart</button>
         </div>

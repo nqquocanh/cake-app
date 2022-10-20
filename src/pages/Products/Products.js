@@ -58,9 +58,15 @@ const Products = () => {
       <div className="products-item">
         <div className="products-category">
           <button onClick={() => filterResult({ cat: "all" })}>All</button>
-          <button onClick={() => filterResult({ cat: "gato" })}>Gato</button>
-          <button onClick={() => filterResult({ cat: "cake" })}>Cake</button>
-          <button onClick={() => filterResult({ cat: "bread" })}>Bread</button>
+          <button onClick={() => filterResult({ cat: "gato" })}>
+            Salad Dressing (น้ำสลัด)
+          </button>
+          <button onClick={() => filterResult({ cat: "cake" })}>
+            Soymilk (นมถั่วเหลือง)
+          </button>
+          <button onClick={() => filterResult({ cat: "bread" })}>
+            Bread (ขนมปัง)<div></div>
+          </button>
         </div>
         <div className="products-list">
           {filterItems &&
